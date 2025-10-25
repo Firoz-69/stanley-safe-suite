@@ -71,27 +71,20 @@ const Navbar = () => {
                               </h3>
                               <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent"></div>
                             </div>
-                            <div className="space-y-4">
-                              <div
-                                className="group cursor-pointer transition-all hover:translate-x-2 duration-300 p-4 rounded-lg hover:bg-primary/10 border-l-4 border-transparent hover:border-primary"
-                                onClick={() => scrollToSection("products")}
-                              >
-                                <p className="text-gray-600 font-bold text-xl mb-1 relative inline-block">
+                            <div className="space-y-1">
+                              <div className="group cursor-pointer transition-all hover:translate-x-2 duration-300 border-b-2 p-3 rounded-md hover:bg-primary/10 border-l-4 border-gray-300  hover:border-primary">
+                                <p className="text-gray-600 font-semibold text-base mb-1  relative inline-block">
                                   Head Protection
                                 </p>
-                                <p className="text-gray-500 text-sm">
-                                  Hard hats, helmets & safety gear
-                                </p>
                               </div>
-                              <div
-                                className="group cursor-pointer transition-all hover:translate-x-2 duration-300 p-4 rounded-lg hover:bg-primary/10 border-l-4 border-transparent hover:border-primary"
-                                onClick={() => scrollToSection("products")}
-                              >
-                                <p className="text-gray-600 font-bold text-xl mb-1 relative inline-block">
+                              <div className="group cursor-pointer transition-all hover:translate-x-2 duration-300 p-3 border-b-2 rounded-md hover:bg-primary/10 border-l-4 border-gray-300 hover:border-primary">
+                                <p className="text-gray-600 font-semibold text-base mb-1 relative inline-block">
                                   Body Protection
                                 </p>
-                                <p className="text-gray-500 text-sm">
-                                  Vests, harnesses & full coverage
+                              </div>
+                              <div className="group cursor-pointer transition-all hover:translate-x-2 duration-300 p-3 border-b-2 rounded-md hover:bg-primary/10 border-l-4 border-gray-300 hover:border-primary">
+                                <p className="text-gray-600 font-semibold text-base mb-1 relative inline-block">
+                                  Body Protection2
                                 </p>
                               </div>
                             </div>
