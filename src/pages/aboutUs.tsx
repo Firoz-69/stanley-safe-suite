@@ -14,9 +14,16 @@ const AboutUs = () => {
             alt="Stanley Safety Team"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-            <h1 className="text-yellow-400 text-5xl font-bold tracking-wide">
-              About Stanley Safety
+          <div className="absolute inset-0 bg-black/60 flex flex-col justify-end items-start pb-15 pl-40 ">
+            <div className="bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-6 py-2 mb-4">
+              <span className="text-primary font-semibold tracking-wider text-sm uppercase">
+                About
+              </span>
+            </div>
+            <h1 className="font-['Bebas_Neue'] text-7xl md:text-8xl lg:text-[10rem] text-primary tracking-wider leading-none mb-8 animate-float">
+              STANLEY
+              <br />
+              SAFETY
             </h1>
           </div>
         </section>

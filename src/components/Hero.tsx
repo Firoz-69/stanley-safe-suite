@@ -8,19 +8,19 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-out"
-        style={{ 
+        style={{
           backgroundImage: `url(${heroImage})`,
-          transform: isHovered ? 'scale(1.05)' : 'scale(1)'
+          transform: isHovered ? "scale(1.05)" : "scale(1)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/85 to-secondary/60"></div>
       </div>
-      
+
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20"></div>
-      
+
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-4xl">
           <div className="animate-fade-in space-y-8">
@@ -31,34 +31,37 @@ const Hero = () => {
                 </span>
               </div>
             </div>
-            
-            <h1 
+
+            <h1
               className="font-['Bebas_Neue'] text-7xl md:text-8xl lg:text-[10rem] text-primary mb-6 tracking-wider leading-none animate-float"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              STANLEY<br/>SAFETY
+              STANLEY
+              <br />
+              SAFETY
             </h1>
-            
+
             <div className="space-y-4 animate-slide-in-right">
               <p className="text-3xl md:text-4xl text-primary-foreground font-bold">
                 Professional Hardware & Safety Solutions
               </p>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Trusted by professionals worldwide. We provide premium quality tools and safety equipment that set industry standards.
+                Trusted by professionals worldwide. We provide premium quality
+                tools and safety equipment that set industry standards.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4 pt-4 animate-scale-up">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-10 py-7 transition-all hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 group"
               >
                 View Products
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
                 className="border-2 border-primary/50 bg-background/10 backdrop-blur-md text-primary-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary font-bold text-lg px-10 py-7 transition-all hover:scale-110 hover:shadow-2xl group"
               >
@@ -74,13 +77,17 @@ const Hero = () => {
                 { value: "500+", label: "Products" },
                 { value: "50K+", label: "Clients" },
               ].map((stat, index) => (
-                <div 
+                <div
                   key={index}
                   className="text-center p-4 rounded-xl bg-background/10 backdrop-blur-md border border-primary/20 hover:border-primary/50 hover:bg-background/20 transition-all hover:scale-105"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="font-['Bebas_Neue'] text-4xl text-primary mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</div>
+                  <div className="font-['Bebas_Neue'] text-4xl text-primary mb-1">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground uppercase tracking-wider">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
